@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Track</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+{#    <link rel="stylesheet" href="css/style_about.css">#}
+{#    <link rel="stylesheet" href="css/style_pr_list.css">#}
+    <style>
+        .nav ul{
+            display: none;
+        }
+        .nav li:hover ul{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="{% static 'img/index/logo.PNG' %}" alt="logo">
+            </div>
+            <input type="checkbox" id="menu-checkbox">
+            <nav role="navigation" class="navbar-nav">
+                <label for="menu-checkbox" class="toggle-button" data-open="Menu" data-close="Close" onclick>
+                </label>
+                <ul class="main-menu">
+                    <li>
+                        <i class="fas fa-language"></i>
+                        <p>UKR RUS ENG</p>
+
+                    </li>
+                    <li><a href="#">КАТАЛОГ</a></li>
+                    <li><a href="#">О НАС</a></li>
+                    <li><a href="#">НОВИНКИ</a></li>
+                    <li><a href="#">ДОСТАВКА И ОПЛАТА</a></li>
+                    <li><a href="#">КОНТАКТЫ</a></li>
+                    <li style="padding-top: 10px"><input type="text" class="q"></li>
+
+
+                    <li class="text-center">
+                        <div class="numbers "><h5 class="number"><small>098 721 22 71</small></h5>
+                            <h5 class="number" style="margin-top: -10px;"><small> 095 489 32 04</small></h5></div>
+
+                    </li>
+                    <li style="padding-left: 10px;">
+                        <a href="#"><i class="fas fa-shopping-cart"></i>
+                            <span class="">(0 items)</span>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+
+
+            </nav>
+        </div>
+    </header>
+<main>
+    {% block content %}
+
+{% endblock %}
+
+</main>
+<footer class="mt-5 pr-5 border-top">
+    <section class="mt-5">
+        <div class="row">
+            <div class="col-sm-4" style="margin-left: 62px">
+                <h3 class="mb-4">
+                    КОНТАКТЫ
+                </h3>
+                <ul class="d-block">
+                    <li><p class="font-weight-bold">+38 (098) 721-22-71</p></li>
+                    <li><p class="font-weight-bold">+38 (095) 489-32-04</p></li>
+                    <li><p  class="font-weight-bold">м. Сарни, вул.Грушевського,1</p></li>
+                    <li><p class="font-weight-bold">treksarni@ukr.net</p></li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <h3 class="mb-4">
+                    МЕНЮ
+                </h3>
+
+                <ul class="d-block menu">
+                    <li><a href="" class="font-weight-bold">О НАС</a></li>
+                    <li><a href="" class="font-weight-bold">НОВОСТИ</a></li>
+                    <li><a href="" class="font-weight-bold">ДОСТАВКА И ОПЛАТА</a></li>
+                    <li><a href="" class="font-weight-bold">КОНТАКТЫ</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3 class="mb-4">
+                    ОПАТА
+                </h3>
+                <ul class="d-flex">
+                    <li class="pr-5"><i class="fab fa-cc-visa"></i></li>
+                    <li><i class="fab fa-cc-mastercard"></i></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <section class="w-100 danger-color">
+        <div class="text-center py-3 danger-color" style="position: relative; left: 48px;"><p class="white-text">Зроблено компанією<a href="https://mdbootstrap.com/"> PROLOG</a></p>
+
+        </div>
+    </section>
+
+
+
+
+
+
+</footer>
+</body>
+</html>
